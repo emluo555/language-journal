@@ -20,7 +20,7 @@ const getTopics = async () => {
 
 export default async function TopicsList() {
   const { topics } = await getTopics();
-
+  console.log(topics)
   return (
     <>
       {topics.map((t) => (
